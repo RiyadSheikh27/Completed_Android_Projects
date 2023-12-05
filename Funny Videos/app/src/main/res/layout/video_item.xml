@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layItem"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/item_back1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/layThumb"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/imgThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/icon_play" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_play"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#80000000"
+                android:padding="5dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/layThumb"
+                android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe De Anatolia - Astral Souls Exclusive For Ethno World 2021"
+                    android:textStyle="normal"
+                    android:textColor="@color/purple_700"
+                    android:textSize="17sp"
+                    android:maxLines="2"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="➤ Cafe De Anatolia - Astral Souls Exclusive For Ethno World 2021 (Mix by DJ Sergee)
+➤ Follow Cafe De Anatolia on Spotify: https://spoti.fi/2CoRyUv​
+➤ Subscribe for more: https://bit.ly/2wiXH5s"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:maxLines="3"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:orientation="vertical"
+    android:background="#E9B71C1C"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/first"
+            android:layout_width="12dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white"
+            />
+        <View
+            android:id="@+id/second"
+            android:layout_toStartOf="@id/first"
+            android:layout_width="12dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="#1BCD95"
+            /> <View
+        android:layout_toStartOf="@id/second"
+        android:layout_width="12dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="#311B92"
+        />
+        <View
+            android:id="@+id/third"
+            android:layout_width="12dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+
+            />
+        <View
+            android:id="@+id/fourth"
+            android:layout_toEndOf="@+id/third"
+            android:layout_width="12dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:background="#1BCD95"
+
+            /> <View
+        android:layout_toEndOf="@id/fourth"
+        android:layout_width="12dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:background="#311B92"
+        />  <View
+        android:id="@+id/fifth"
+        android:layout_width="12dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+
+        />
+        <View
+            android:id="@+id/sixth"
+            android:layout_toStartOf="@id/fifth"
+            android:layout_width="12dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="#1BCD95"
+            android:layout_alignParentBottom="true"
+
+            /> <View
+        android:layout_toStartOf="@id/sixth"
+        android:layout_width="12dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="#311B92"
+        android:layout_alignParentBottom="true"
+        />
+        <View
+            android:id="@+id/seventh"
+            android:layout_width="12dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+
+            />
+        <View
+            android:id="@+id/eighth"
+            android:layout_toEndOf="@+id/seventh"
+            android:layout_width="12dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="#1BCD95"
+
+            /> <View
+        android:layout_toEndOf="@id/eighth"
+        android:layout_width="12dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:background="#311B92"
+        />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143"
+        tools:layout_editor_absoluteX="-16dp"
+        android:background="@drawable/ic_launcher_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advance Quotes And Status"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font6"
+            android:textSize="20sp"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hi"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:backgroundTint="#F0B71C1C"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/for_lottie"
+            android:weightSum="3"
+            >
+            <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="6dp"
+                android:id="@+id/share"
+                android:layout_toLeftOf="@id/btnRate"
+                android:layout_marginHorizontal="14dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/share2"
+                    android:id="@+id/share2"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_below="@+id/share2"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font6"
+                    />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="14dp"
+                app:cardElevation="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnRate"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/rate2"
+                        android:id="@+id/rate2"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate"
+                        android:layout_below="@+id/rate2"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font6"
+                        />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginHorizontal="14dp"
+                app:cardElevation="6dp"
+                android:layout_toRightOf="@+id/btnRate"
+                android:id="@+id/btnMore"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/more2"
+                        android:id="@+id/more2"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:layout_below="@+id/more2"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font6"
+                        />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btnStart"
+        android:layout_marginBottom="40dp"
+        >
+<com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/myLottie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lottie_rawRes="@raw/lottie"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    />
+
+
+        
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

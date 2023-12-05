@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Funny Videos</string>
+
+    <!-- Admob AD ON or OFF -->
+    <string name="show_admob_ad">ON</string>
+
+    <!-- Device ID  setTestDeviceIds (search on logcat for device id) -->
+    <string name="device_id">9D9E1E8414F2CE7EF3D46B9ECED3A919</string>
+
+    <!-- Admob APP ID HERE -->
+    <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <!-- Admob Ad Unit IDS Here -->
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>

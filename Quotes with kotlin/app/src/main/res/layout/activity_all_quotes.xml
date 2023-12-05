@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllQuotesActivity"
+    android:background="#CDC0C0">
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#F49B01"
+        android:orientation="horizontal"
+        >
+        <ImageView
+
+            android:id="@+id/btnback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_icon"
+
+            />
+        <TextView
+            android:id="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riyad's Quotes App"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="19sp"
+            android:fontFamily="@font/font5"
+            android:textStyle="bold"
+            android:textColor="#F4EBEB"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_cat"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/allQuotes"
+        />
+
+
+</RelativeLayout>
